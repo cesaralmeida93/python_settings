@@ -13,3 +13,7 @@ black start.py
 pip3 install flake8
 pip3 install pytest
 pytest -v
+pip3 install pre-commit
+pre-commit install
+git add .
+git commit -m 'config: Setting project configs'
