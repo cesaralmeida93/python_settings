@@ -1,0 +1,15 @@
+cd Documents/new_project/
+code .
+git init
+pip3 install virtualenv
+virutalenv -p python3 venv
+. venv/bin/activate
+pip3 install pylint
+venv/bin/pip3 freeze > requirements.txt
+pylint start.py
+pylint --generate-rcfile > .pylintrc
+pip3 install black
+black start.py
+pip3 install flake8
+pip3 install pytest
+pytest -v
